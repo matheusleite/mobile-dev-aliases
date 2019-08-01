@@ -1,0 +1,38 @@
+alias b='cd ..'
+alias t='touch'
+alias m='mkdir'
+alias o='open'
+
+#Git aliases
+alias gs='git status'
+alias gl="git log --pretty=oneline"
+alias gt="git shortlog -es | cut -f2 | sed 's/^/- /'"
+alias gm='git push origin master'
+alias gd='git push origin develop'
+alias gc='git commit'
+alias ga='git add .'
+alias gb ='git checkout -b'
+
+#iOS Development
+alias clean-derived='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
+alias sim="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+
+#Android Development
+
+
+#React Native Development
+alias rns='react-native start'
+alias rna='react-native run-android'
+alias rni='react-native run-ios'
+alias rn.bundle.android='react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug'
+
+#Node Development
+alias ni='npm install -s'
+alias ns='npm start'
+
+#Flutter Development
+alias fd='flutter doctor'
+
+#Ionic Development
+alias is='ionic serve'
+alias ip='ionic cordova prepare'
